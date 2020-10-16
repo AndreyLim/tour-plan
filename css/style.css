@@ -780,6 +780,12 @@ template {
   overflow: hidden;
 }
 
+.swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -787,7 +793,7 @@ template {
   .slider {
     width: 590px;
   }
-  .swiper-slade__img {
+  .swiper-wrapper__img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
@@ -924,6 +930,10 @@ template {
   }
   .map {
     width: 100%;
+  }
+  .swiper-slade__img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
