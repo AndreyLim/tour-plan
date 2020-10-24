@@ -13,6 +13,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -57,7 +60,7 @@
       line-height: 38px
       margin-bottom: 54px
   .activities
-    padding-top: 29px
+    padding: 29px 0 50px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -67,6 +70,49 @@
     height: 255px
     &__image
       object-fit: cover
+  .footer
+    padding-top: 40px
+    &-wrapper
+      grid-template-columns: 1fr 20px repeat(3, 1fr) 50px
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 48%
+    &__logo
+      width: 104px
+      height: 120.29px
+      grid-row: 1 / 2
+      grid-column: span 2
+
+    &__social
+      &-network
+        margin-top: 30px
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      margin: 0
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        padding-top: 27px
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 4
+        grid-row: 4
+
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 70px
+    &__disclaimer
+      margin-left: 0px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -146,12 +192,13 @@
           margin-right: -65px
           transform: translate(50%, 0)
   .activities
-    padding-top: 40px
-    padding-bottom: 60px
+    padding: 40px 0 50px 0
   .card
     width: 49%
     height: 255px
-
+  .footer
+    &__input
+      flex-basis: 100%
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -179,3 +226,30 @@
       line-height: 23px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+        width: 100%
