@@ -81,7 +81,7 @@
       grid-row-gap: 20px
     &__input
       flex-basis: 48%
-
+      width: 150px
     &__logo
       width: 104px
       height: 120.29px
@@ -295,7 +295,12 @@
       &-details
         grid-row: 6
         grid-column: 1
+        width: 300px
       &-form
+        width: 300px
         grid-row: 7
         grid-column: 1
-        width: 100%
+@media ( max-width: 360px )
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
