@@ -1986,4 +1986,15 @@ body {
     width: 250px;
   }
 }
+
+@media (max-height: 380px) {
+  .modal__dialog {
+    overflow: auto;
+    padding: 60px 50px;
+  }
+  .modal__message {
+    max-height: 55px;
+    min-height: 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
