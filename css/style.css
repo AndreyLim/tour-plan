@@ -1963,12 +1963,18 @@ body {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .search__input {
+    width: 290px;
+  }
 }
 
 @media (max-width: 360px) {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .search__input {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
