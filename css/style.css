@@ -354,6 +354,15 @@ body {
   border-radius: 4px;
 }
 
+.back__button {
+  margin-top: 10px;
+}
+
+.back__link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .navbar {
   background-color: #fff;
 }
