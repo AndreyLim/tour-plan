@@ -354,15 +354,6 @@ body {
   border-radius: 4px;
 }
 
-.back__button {
-  margin-top: 10px;
-}
-
-.back__link {
-  text-decoration: none;
-  color: #fff;
-}
-
 .navbar {
   background-color: #fff;
 }
@@ -1384,6 +1375,10 @@ body {
 .footer__pay {
   position: absolute;
   right: 0;
+}
+
+.button__back {
+  margin-top: 10px;
 }
 
 .modal__overlay {
